@@ -53,9 +53,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-- **Project Lead** - Chetan Reddy Kodidela ([chetanreddyk394@gmail.com](mailto:chetanreddyk394@gmail.com))
-- **Frontend Developer** - Jaswanth Gosu ([jaswanthgosu0909@gmail.com](mailto:jaswanthgosu0909@gmail.com))
-- **Backend Developer** - Nishchith Gottimukkula ([bunnynish.g@gmail.com](mailto:bunnynish.g@gmail.com))
-- **UI/UX Designer** - Venkata Satyannarayana Banna ([cs22b011@iittp.ac.in](mailto:cs22b011@iittp.ac.in))
+- **Team Member 1** - Chetan Reddy Kodidela ([chetanreddyk394@gmail.com](mailto:chetanreddyk394@gmail.com))
+- **Team Member 2** - Jaswanth Gosu ([jaswanthgosu0909@gmail.com](mailto:jaswanthgosu0909@gmail.com))
+- **Team Member 3** - Nishchith Gottimukkula ([bunnynish.g@gmail.com](mailto:bunnynish.g@gmail.com))
+- **Team Member 4** - Venkata Satyannarayana Banna ([cs22b011@iittp.ac.in](mailto:cs22b011@iittp.ac.in))
 
 ---

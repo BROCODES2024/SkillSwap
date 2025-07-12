@@ -26,8 +26,12 @@ const RegisterPage = () => {
     handleSubmit,
     watch,
     formState: { errors },
+<<<<<<< HEAD
     setValue,
     trigger
+=======
+    setValue
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
   } = useForm();
 
   const password = watch('password');
@@ -47,14 +51,24 @@ const RegisterPage = () => {
 
   const handleSkillToggle = (skill, type) => {
     if (type === 'offered') {
+<<<<<<< HEAD
       setSelectedSkillsOffered(prev =>
         prev.includes(skill)
+=======
+      setSelectedSkillsOffered(prev => 
+        prev.includes(skill) 
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
           ? prev.filter(s => s !== skill)
           : [...prev, skill]
       );
     } else {
+<<<<<<< HEAD
       setSelectedSkillsWanted(prev =>
         prev.includes(skill)
+=======
+      setSelectedSkillsWanted(prev => 
+        prev.includes(skill) 
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
           ? prev.filter(s => s !== skill)
           : [...prev, skill]
       );
@@ -62,16 +76,25 @@ const RegisterPage = () => {
   };
 
   const handleAvailabilityToggle = (availability) => {
+<<<<<<< HEAD
     setSelectedAvailability(prev =>
       prev.includes(availability)
+=======
+    setSelectedAvailability(prev => 
+      prev.includes(availability) 
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
         ? prev.filter(a => a !== availability)
         : [...prev, availability]
     );
   };
 
+<<<<<<< HEAD
   const nextStep = async () => {
     const isValid = await trigger(); // validate current step
     if (!isValid) return;
+=======
+  const nextStep = () => {
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
     if (currentStep < steps.length) {
       setCurrentStep(currentStep + 1);
     }
@@ -85,6 +108,7 @@ const RegisterPage = () => {
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
+<<<<<<< HEAD
 
     // Manual validation for local state values
     if (selectedSkillsOffered.length === 0) {
@@ -108,6 +132,8 @@ const RegisterPage = () => {
       return;
     }
 
+=======
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
     try {
       const userData = {
         ...data,
@@ -195,7 +221,15 @@ const RegisterPage = () => {
                 className="absolute inset-y-0 right-0 pr-3 flex items-center"
                 onClick={() => setShowPassword(!showPassword)}
               >
+<<<<<<< HEAD
                 {showPassword ? <EyeOff className="h-5 w-5 text-gray-400" /> : <Eye className="h-5 w-5 text-gray-400" />}
+=======
+                {showPassword ? (
+                  <EyeOff className="h-5 w-5 text-gray-400" />
+                ) : (
+                  <Eye className="h-5 w-5 text-gray-400" />
+                )}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
               </button>
             </div>
 
@@ -217,7 +251,15 @@ const RegisterPage = () => {
                 className="absolute inset-y-0 right-0 pr-3 flex items-center"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               >
+<<<<<<< HEAD
                 {showConfirmPassword ? <EyeOff className="h-5 w-5 text-gray-400" /> : <Eye className="h-5 w-5 text-gray-400" />}
+=======
+                {showConfirmPassword ? (
+                  <EyeOff className="h-5 w-5 text-gray-400" />
+                ) : (
+                  <Eye className="h-5 w-5 text-gray-400" />
+                )}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
               </button>
             </div>
           </div>
@@ -238,8 +280,16 @@ const RegisterPage = () => {
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {popularSkills
+<<<<<<< HEAD
                         .filter(skill => ['Programming', 'Design', 'Cooking', 'Music', 'Languages', 'Fitness', 'Photography', 'Writing', 'Business', 'Crafts']
                           .includes(category.name) && popularSkills.includes(skill))
+=======
+                        .filter(skill => 
+                          ['Programming', 'Design', 'Cooking', 'Music', 'Languages', 'Fitness', 'Photography', 'Writing', 'Business', 'Crafts']
+                          .includes(category.name) && 
+                          popularSkills.includes(skill)
+                        )
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
                         .slice(0, 5)
                         .map((skill) => (
                           <Badge
@@ -269,8 +319,16 @@ const RegisterPage = () => {
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {popularSkills
+<<<<<<< HEAD
                         .filter(skill => ['Programming', 'Design', 'Cooking', 'Music', 'Languages', 'Fitness', 'Photography', 'Writing', 'Business', 'Crafts']
                           .includes(category.name) && popularSkills.includes(skill))
+=======
+                        .filter(skill => 
+                          ['Programming', 'Design', 'Cooking', 'Music', 'Languages', 'Fitness', 'Photography', 'Writing', 'Business', 'Crafts']
+                          .includes(category.name) && 
+                          popularSkills.includes(skill)
+                        )
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
                         .slice(0, 5)
                         .map((skill) => (
                           <Badge
@@ -339,6 +397,10 @@ const RegisterPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
+<<<<<<< HEAD
+=======
+        {/* Logo and Title */}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
         <div className="text-center">
           <div className="mx-auto w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
             <span className="text-white font-bold text-xl">S</span>
@@ -349,6 +411,10 @@ const RegisterPage = () => {
           </p>
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Progress Steps */}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
         <div className="flex items-center justify-between">
           {steps.map((step, index) => (
             <div key={step.id} className="flex items-center">
@@ -357,7 +423,15 @@ const RegisterPage = () => {
                   ? 'bg-primary-600 text-white'
                   : 'bg-gray-200 text-gray-600'
               }`}>
+<<<<<<< HEAD
                 {currentStep > step.id ? <Check className="h-4 w-4" /> : step.id}
+=======
+                {currentStep > step.id ? (
+                  <Check className="h-4 w-4" />
+                ) : (
+                  step.id
+                )}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
               </div>
               {index < steps.length - 1 && (
                 <div className={`w-12 h-0.5 mx-2 ${
@@ -368,11 +442,16 @@ const RegisterPage = () => {
           ))}
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Form */}
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
         <Card>
           <CardContent className="p-6">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {renderStepContent()}
 
+<<<<<<< HEAD
               <div className="flex justify-between">
                 {currentStep > 1 && (
                   <Button type="button" variant="outline" onClick={prevStep}>
@@ -386,6 +465,35 @@ const RegisterPage = () => {
                   </Button>
                 ) : (
                   <Button type="submit" className="ml-auto" loading={isSubmitting} disabled={isSubmitting}>
+=======
+              {/* Navigation Buttons */}
+              <div className="flex justify-between">
+                {currentStep > 1 && (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={prevStep}
+                  >
+                    Previous
+                  </Button>
+                )}
+                
+                {currentStep < steps.length ? (
+                  <Button
+                    type="button"
+                    onClick={nextStep}
+                    className="ml-auto"
+                  >
+                    Next
+                  </Button>
+                ) : (
+                  <Button
+                    type="submit"
+                    className="ml-auto"
+                    loading={isSubmitting}
+                    disabled={isSubmitting}
+                  >
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
                     Create Account
                   </Button>
                 )}
@@ -394,10 +502,21 @@ const RegisterPage = () => {
           </CardContent>
         </Card>
 
+<<<<<<< HEAD
         <div className="text-center">
           <p className="text-sm text-gray-600">
             Already have an account?{' '}
             <Link to="/login" className="font-medium text-primary-600 hover:text-primary-500">
+=======
+        {/* Sign In Link */}
+        <div className="text-center">
+          <p className="text-sm text-gray-600">
+            Already have an account?{' '}
+            <Link
+              to="/login"
+              className="font-medium text-primary-600 hover:text-primary-500"
+            >
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
               Sign in
             </Link>
           </p>
@@ -407,4 +526,8 @@ const RegisterPage = () => {
   );
 };
 
+<<<<<<< HEAD
 export default RegisterPage;
+=======
+export default RegisterPage; 
+>>>>>>> d759080e15cca199ff0e7c008979357f35b67d56
